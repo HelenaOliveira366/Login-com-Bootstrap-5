@@ -33,6 +33,19 @@ body{
 }
 
 /*INPUTS*/
+#form-container input[type="checkbox"]:checked{
+    background-color: var(--dark-green);
+    border: var(--dark-green);
+}
+
+#form-container input[type="checkbox"]:active{
+    outline: none;
+}
+
+#form-container input[type="checkbox"]:focus{
+    box-shadow: none;
+}
+
 #form-container .form-control{
     border: 1px solid var(--dark-green);
     border-radius: 10px;
@@ -81,8 +94,10 @@ body{
 #form-container a{
     text-align: center;
     transition: .5s;
-    
+
     padding: 8px 0;
+
+    color: var(--dark-green);
 }
 
 #form-container #link-container #reset{
@@ -103,5 +118,5 @@ body{
 
 /*IMAGEM*/
 #form-container .img-fluid{
-    margin-top: 24px;
+    margin-top: 30px;
 }

@@ -1,0 +1,108 @@
+:root{
+    --white: #FFFFFF;
+    --black: #2C3333;
+    --gray: #9BA4B5;
+    --orange: #FC5404;
+    --dark-yellow: #F7B71D;
+    --light-yellow: #FDEF96;
+    --dark-green: #0E8388;
+    --light-green: #64CCC5;
+}
+
+body{
+    background-color: #F9F9F9;
+    color: var(--black);
+}
+
+#form-container{
+    background-color: var(--white);
+    box-shadow: 5px 5px 15px var(--light-green);
+
+    margin: 30px auto;
+    padding: 32px 24px;
+    border-radius: 20px;
+}
+
+.row.align-items-center{
+    align-content: center;
+    height: 100%;
+}
+
+#form-container h1{
+    margin-bottom: 32px;
+}
+
+/*INPUTS*/
+#form-container .form-control{
+    border: 1px solid var(--dark-green);
+    border-radius: 10px;
+    color: var(--black);
+}
+
+#form-container .form-control:focus{
+    box-shadow: none;
+}
+
+#form-container .form-control:active{
+    outline: none;
+}
+
+#form-container .form-floating label{
+    color: var(--gray);
+}
+
+#form-container .form-floating > .form-control:focus~label{
+    color: var(--dark-green);
+}
+
+/*BUTTON*/
+#form-container .btn{
+    margin-top: 24px;
+    width: 30%;
+
+    color: var(--white);
+    background-color: var(--light-green);
+}
+
+@media(max-width: 768px){
+    #form-container .btn{
+        width: 100%;
+    }
+}
+
+/*LINKS*/
+#form-container #link-container{
+    margin-top: 50px;
+
+    font-size: .9rem;
+    text-align: center;
+}
+
+#form-container a{
+    text-align: center;
+    transition: .5s;
+    display: block;
+
+    padding: 8px 0;
+}
+
+#form-container #link-container #reset{
+    color: var(--dark-yellow);
+}
+
+#form-container #link-container #reset:hover{
+    color: var(--light-green);
+}
+
+#form-container #link-container #register{
+    color: var(--orange);
+}
+
+#form-container #link-container #register:hover{
+    color: var(--light-green);
+}
+
+/*IMAGEM*/
+#form-container .img-fluid{
+    margin-top: 24px;
+}

@@ -11,20 +11,24 @@
     
     <!--CSS import-->
     <link rel="stylesheet" href="./styles/style.css">
+    <!--Validação de formulário-->
+    <script src="./script/validate.js" defer></script>
 </head>
 <body>
     <div class="container col-11 col-md-9" id="form-container">
         <div class="row align-items-center gx-5">
             <div class="col-md-6 order-md-2">
                 <h1>Faça seu login</h1>
-                <form>
+                <form class="needs-validation" novalidate>
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail">
                         <label for="email" class="form-label">Digite seu e-mail</label>
+                        <div class="valid-feedback">Ok</div>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha">
                         <label for="password" class="form-label">Digite sua senha</label>
+                        <div class="valid-feedback">Ok</div>
                     </div>
                     <div class="btn-submit">
                         <button type="submit" class="btn">Entrar</button>

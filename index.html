@@ -19,20 +19,19 @@
         <div class="row align-items-center gx-5">
             <div class="col-md-6 order-md-2">
                 <h1>Faça seu login</h1>
+                <!--Para validação do BS a tag form necessita de "class="needs-validation" novalidate"-->
                 <form class="needs-validation" novalidate>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
                         <label for="email" class="form-label">Digite seu e-mail</label>
                         <div class="valid-feedback">Ok</div>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha" required>
                         <label for="password" class="form-label">Digite sua senha</label>
                         <div class="valid-feedback">Ok</div>
                     </div>
-                    <div class="btn-submit">
-                        <button type="submit" class="btn">Entrar</button>
-                    </div>
+                    <button type="submit" class="btn">Entrar</button>
                     <div class="col-12 d-flex flex-column" id="link-container">
                         <a href="./reset.html" id="reset">Esqueceu sua senha? Clique aqui</a>
                         <a href="./register.html" id="register">Ainda não tem conta? Registre-se aqui</a>

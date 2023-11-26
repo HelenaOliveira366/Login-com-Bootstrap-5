@@ -9,6 +9,11 @@
     --light-green: #64CCC5;
 }
 
+::selection{
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
 body{
     background-color: #F9F9F9;
     color: var(--black);
